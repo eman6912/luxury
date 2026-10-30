@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXORA | Luxury Lifestyle</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">LUXORA<span>.</span></a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="themeBtn" aria-label="Toggle theme">☀</button>
+                <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="subtitle">DISCOVER THE EXTRAORDINARY</p>
+
+            <h1>Live Beyond<br><span>Ordinary.</span></h1>
+
+            <p class="hero-description">
+                Explore extraordinary destinations,
+                timeless elegance and unforgettable experiences.
+            </p>
+
+            <a href="#destinations" class="hero-btn">
+                Explore Collection →
+            </a>
+        </div>
+
+        <div class="hero-bottom">
+            <span>01 / 03</span>
+            <span>THE ART OF LIVING</span>
+        </div>
+    </section>
+
+    <!-- Destinations -->
+    <section class="destinations" id="destinations">
+
+        <div class="section-heading">
+            <div>
+                <p class="subtitle">EXPLORE OUR WORLD</p>
+                <h2>Curated Experiences</h2>
+            </div>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search destinations..."
+            >
+        </div>
+
+        <!-- Filters -->
+        <div class="filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="beach">Beach</button>
+            <button class="filter-btn" data-category="city">City</button>
+            <button class="filter-btn" data-category="nature">Nature</button>
+        </div>
+
+        <!-- Cards -->
+        <div class="destination-grid" id="destinationGrid">
+
+            <article class="destination-card" data-category="beach">
+                <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?w=800" alt="Tropical beach">
+                <div class="card-info">
+                    <span>BEACH ESCAPE</span>
+                    <h3>Maldives</h3>
+                    <p>Paradise in every direction.</p>
+                    <button class="favorite-btn" aria-label="Add Maldives to favorites">♡</button>
+                </div>
+            </article>
+
+            <article class="destination-card" data-category="city">
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800" alt="Dubai city skyline">
+                <div class="card-info">
+                    <span>URBAN LUXURY</span>
+                    <h3>Dubai</h3>
+                    <p>Where ambition meets elegance.</p>
+                    <button class="favorite-btn" aria-label="Add Dubai to favorites">♡</button>
+                </div>
+            </article>
+
+            <article class="destination-card" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800" alt="Mountain lake">
+                <div class="card-info">
+                    <span>NATURE RETREAT</span>
+                    <h3>Switzerland</h3>
+                    <p>Experience nature's masterpiece.</p>
+                    <button class="favorite-btn" aria-label="Add Switzerland to favorites">♡</button>
+                </div>
+            </article>
+
+            <article class="destination-card" data-category="city">
+                <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800" alt="Paris street">
+                <div class="card-info">
+                    <span>TIMELESS ELEGANCE</span>
+                    <h3>Paris</h3>
+                    <p>Romance, art and sophistication.</p>
+                    <button class="favorite-btn" aria-label="Add Paris to favorites">♡</button>
+                </div>
+            </article>
+
+            <article class="destination-card" data-category="beach">
+                <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=800" alt="Greek island">
+                <div class="card-info">
+                    <span>ISLAND LIVING</span>
+                    <h3>Santorini</h3>
+                    <p>Beauty overlooking the sea.</p>
+                    <button class="favorite-btn" aria-label="Add Santorini to favorites">♡</button>
+                </div>
+            </article>
+
+            <article class="destination-card" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800" alt="Mountain landscape">
+                <div class="card-info">
+                    <span>WILD ESCAPE</span>
+                    <h3>The Alps</h3>
+                    <p>Find beauty in every moment.</p>
+                    <button class="favorite-btn" aria-label="Add the Alps to favorites">♡</button>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="emptyMessage" hidden>No destinations found.</p>
+
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <p class="subtitle">OUR PHILOSOPHY</p>
+        <h2>Luxury is not just what you own.<br>
+            It's how you <span>experience life.</span>
+        </h2>
+        <p>Discover a world of beauty, inspiration and extraordinary experiences.</p>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <h2>Stay Inspired.</h2>
+        <p>Get inspiration for your next extraordinary experience.</p>
+
+        <form id="subscribeForm">
+            <input type="email" id="emailInput"
+                   placeholder="Enter your email" required>
+            <button type="submit">Subscribe →</button>
+        </form>
+
+        <p id="message"></p>
+    </section>
+
+    <footer>
+        <a href="#" class="logo">LUXORA<span>.</span></a>
+        <p>© 2026 LUXORA. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
